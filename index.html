@@ -60,107 +60,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- font awesome  -->
-
-    <style>
-      body {
-        background: #f8f7f7;
-        font-family: "PT Serif", serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-      .primaryFont {
-        font-family: "Forum", serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-      .secondaryFont {
-        font-family: "PT Serif", serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-      .textFont {
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-      .more-of-input {
-        border: 1px solid #cdcdcd;
-        width: 100%;
-        height: 48px;
-        background: #f8f7f7;
-        border-radius: 8px;
-        font-size: 16px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-      }
-      .more-of-input:hover {
-        border: 1px solid black;
-      }
-      .signupinput {
-        border: 1px solid #cdcdcd;
-        width: 100%;
-        height: 48px;
-        border-top-left-radius: 8px;
-        border-bottom-left-radius: 8px;
-        font-size: 16px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-      }
-      .signupinput:hover {
-        border: 1px solid black;
-      }
-
-      .two-of-input {
-        border: 1px solid #cdcdcd;
-        width: 100%;
-        height: 48px;
-        background: #f8f7f7;
-        border-radius: 8px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-      }
-      .two-of-input:hover {
-        border: 1px solid black;
-      }
-      .checkboxstyle {
-        border: 1px solid #cdcdcd;
-        width: 19px;
-        height: 19px;
-      }
-      .checkboxstyle:hover {
-        border: 1px solid black;
-      }
-      #check:checked ~ nav {
-        left: 0;
-      }
-      label #openbtn,
-      label #cencelbtn {
-        font-size: 22px;
-        margin-right: 20px;
-        cursor: pointer;
-      }
-      label #openbtn {
-        display: block;
-      }
-      label #cencelbtn {
-        display: none;
-      }
-      #check:checked ~ label #openbtn {
-        display: none;
-      }
-      #check:checked ~ label #cencelbtn {
-        display: block;
-      }
-      .hoverStyle:hover {
-        text-decoration: underline;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- navbar start  -->
@@ -171,21 +71,23 @@
         <i id="cencelbtn" class="fa-solid fa-times"></i>
       </label>
       <nav
-        class="mr-10 bg-[#F5EFF0] lg:flex justify-center text-black uppercase rounded fixed lg:relative h-[100vh] lg:h-0 w-[100%] top-20 lg:top-0 left-[-100%] lg:left-0 transition-all duration-300 lg:transition-none text-center list-none"
+        class="mr-10 bg-[#F5EFF0] lg:flex justify-center text-black rounded fixed lg:relative h-[100vh] lg:h-0 w-[100%] top-20 lg:top-0 left-[-100%] lg:left-0 transition-all duration-300 lg:transition-none text-center list-none"
       >
         <li
           class="lg:py-0 py-5 lg:mt-0 mt-10 hoverStyle lg:border-t-0 lg:border-b-0 border-t-2 border-b-2"
         >
-          <a class="ml-7 text-[14.3px]" href="">Luxury Picnics</a>
+          <a class="ml-7 text-[14.3px]" href="index.html">Luxury Picnics</a>
         </li>
         <li class="lg:py-0 py-5 lg:border-b-0 border-b-2 hoverStyle">
-          <a class="ml-7 text-[14.3px]" href="">Appointment request</a>
+          <a class="ml-7 text-[14.3px]" href="#appointment"
+            >Appointment request</a
+          >
         </li>
         <li class="lg:py-0 py-5 lg:border-b-0 border-b-2 hoverStyle">
           <a class="ml-7 text-[14.3px]" href="">Instagram</a>
         </li>
         <li class="lg:py-0 py-5 lg:border-b-0 border-b-2 hoverStyle">
-          <a class="ml-7 text-[14.3px]" href="">FAQ</a>
+          <a class="ml-7 text-[14.3px]" href="faq.html">FAQ</a>
         </li>
       </nav>
     </div>
@@ -216,7 +118,7 @@
               class="secondaryFont w-full bg-[#e8b4b8] px-6 py-3 hover:bg-[#de959a] duration-500"
               style="border-radius: 8px"
             >
-              Book Now!
+              <a href="#appointment">Book Now!</a>
             </button>
           </div>
         </div>
@@ -326,7 +228,7 @@
       <!-- how does section end -->
 
       <!-- appointment section start  -->
-      <div class="lg:mt-36 md:mt-24 mt-20">
+      <div class="lg:mt-36 md:mt-24 mt-20" id="appointment">
         <h2 class="primaryFont text-3xl mb-4 text-center">
           Request an appointment
         </h2>

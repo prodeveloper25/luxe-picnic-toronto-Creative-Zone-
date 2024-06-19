@@ -1,0 +1,98 @@
+body {
+  background: #f8f7f7;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.primaryFont {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.secondaryFont {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.textFont {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.more-of-input {
+  border: 1px solid #cdcdcd;
+  width: 100%;
+  height: 48px;
+  background: #f8f7f7;
+  border-radius: 8px;
+  font-size: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.more-of-input:hover {
+  border: 1px solid black;
+}
+.signupinput {
+  border: 1px solid #cdcdcd;
+  width: 100%;
+  height: 48px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  font-size: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.signupinput:hover {
+  border: 1px solid black;
+}
+
+.two-of-input {
+  border: 1px solid #cdcdcd;
+  width: 100%;
+  height: 48px;
+  background: #f8f7f7;
+  border-radius: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.two-of-input:hover {
+  border: 1px solid black;
+}
+.checkboxstyle {
+  border: 1px solid #cdcdcd;
+  width: 19px;
+  height: 19px;
+}
+.checkboxstyle:hover {
+  border: 1px solid black;
+}
+#check:checked ~ nav {
+  left: 0;
+}
+label #openbtn,
+label #cencelbtn {
+  font-size: 22px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+label #openbtn {
+  display: block;
+}
+label #cencelbtn {
+  display: none;
+}
+#check:checked ~ label #openbtn {
+  display: none;
+}
+#check:checked ~ label #cencelbtn {
+  display: block;
+}
+.hoverStyle:hover {
+  text-decoration: underline;
+}

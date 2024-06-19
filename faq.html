@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Luxe Picnics Toronto | Luxury Pop up Picnic Experiences | Book Now! | Luxe
+      Picnics Toronto
+    </title>
+    <link rel="shortcut icon" href="/images/square.ico" type="image/x-icon" />
+    <!-- tailwind script  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind script  -->
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- pt serif font  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- pt serif font  -->
+    <!-- forum font  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&display=swap"
+      rel="stylesheet"
+    />
+    <!-- forum font  -->
+    <!-- poppins font  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- poppins font  -->
+    <!-- google font  -->
+
+    <!-- email js start  -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("aU3M0i9yWn85QxOt_");
+      })();
+    </script>
+    <!-- email js end  -->
+
+    <!-- connect js file  -->
+    <script src="/script.js"></script>
+    <!-- connect js file  -->
+
+    <!-- moment js start  -->
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <!-- moment js end -->
+
+    <!-- font awesome  -->
+    <script
+      src="https://kit.fontawesome.com/4d4075f3ca.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar start  -->
+    <div class="bg-[#f8f7f7] text-center py-6 secondaryFont">
+      <input type="checkbox" name="check" id="check" hidden />
+      <label for="check" class="float-right lg:hidden">
+        <i id="openbtn" class="fa-solid fa-bars"></i>
+        <i id="cencelbtn" class="fa-solid fa-times"></i>
+      </label>
+      <nav
+        class="mr-10 bg-[#F5EFF0] lg:flex justify-center text-black rounded fixed lg:relative h-[100vh] lg:h-0 w-[100%] top-20 lg:top-0 left-[-100%] lg:left-0 transition-all duration-300 lg:transition-none text-center list-none"
+      >
+        <li
+          class="lg:py-0 py-5 lg:mt-0 mt-10 hoverStyle lg:border-t-0 lg:border-b-0 border-t-2 border-b-2"
+        >
+          <a class="ml-7 text-[14.3px]" href="index.html">Luxury Picnics</a>
+        </li>
+        <li class="lg:py-0 py-5 lg:border-b-0 border-b-2 hoverStyle">
+          <a class="ml-7 text-[14.3px]" href="#appointment"
+            >Appointment request</a
+          >
+        </li>
+        <li class="lg:py-0 py-5 lg:border-b-0 border-b-2 hoverStyle">
+          <a class="ml-7 text-[14.3px]" href="">Instagram</a>
+        </li>
+        <li class="lg:py-0 py-5 lg:border-b-0 border-b-2 hoverStyle">
+          <a class="ml-7 text-[14.3px]" href="faq.html">FAQ</a>
+        </li>
+      </nav>
+    </div>
+    <!-- navbar end  -->
+    <main>
+      <h2 class="text-4xl mt-36 ml-10">this is nahid</h2>
+    </main>
+    <!-- Stay in the Loop section start  -->
+    <div class="bg-white py-14">
+      <div
+        class="lg:flex md:flex justify-between items-end max-w-screen-xl mx-auto lg:px-36 md:px-20 px-10"
+      >
+        <div>
+          <h2
+            class="secondaryFont text-2xl mb-4 lg:text-start md:text-start text-center"
+          >
+            Stay in the Loop
+          </h2>
+          <form>
+            <div class="lg:w-[495px] md:w-[495px] flex items-center mb-4">
+              <input
+                type="email"
+                name="signupemail"
+                class="signupinput duration-300"
+                id="signupemail"
+                placeholder="Email"
+                required
+              />
+              <button
+                onclick="signupSendMail()"
+                class="secondaryFont w-[110px] bg-[#e8b4b8] py-3 hover:bg-[#de959a] duration-500"
+                style="
+                  border-top-right-radius: 8px;
+                  border-bottom-right-radius: 8px;
+                "
+              >
+                Sign up
+              </button>
+            </div>
+          </form>
+          <p
+            class="text-[#636363] text-[12px] lg:text-start md:text-start text-center"
+          >
+            This form is protected by reCAPTCHA, and the Google
+            <a
+              class="underline"
+              href="https://policies.google.com/privacy"
+              target="_blank"
+              >Privacy Policy</a
+            >
+            and
+            <a
+              class="underline"
+              href="https://policies.google.com/terms"
+              target="_blank"
+              >Terms of Service</a
+            >
+            apply.
+          </p>
+        </div>
+        <div>
+          <h4
+            id="dynamicyear"
+            class="lg:text-start md:text-start text-center lg:mt-0 md:mt-0 mt-8"
+          ></h4>
+        </div>
+      </div>
+    </div>
+    <!-- Stay in the Loop section end -->
+
+    <!-- footer start  -->
+    <footer class="bg-[#323B43] py-16">
+      <div class="w-[120px] mx-auto cursor-pointer">
+        <a target="_blank" href="https://squareup.com/us/en/online-store">
+          <img
+            class="w-[30px] mx-auto mb-3"
+            src="images/whitesquare.png"
+            alt="whitesquare"
+          />
+          <p class="text-white text-[12px] textFont">
+            Powered by <span class="font-semibold">Square</span>
+          </p></a
+        >
+      </div>
+    </footer>
+    <!-- footer end  -->
+  </body>
+</html>

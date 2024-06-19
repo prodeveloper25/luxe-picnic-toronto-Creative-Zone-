@@ -26,6 +26,12 @@
       rel="stylesheet"
     />
     <!-- forum font  -->
+    <!-- poppins font  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- poppins font  -->
     <!-- google font  -->
 
     <!-- email js start  -->
@@ -48,6 +54,13 @@
     <script src="https://momentjs.com/downloads/moment.js"></script>
     <!-- moment js end -->
 
+    <!-- font awesome  -->
+    <script
+      src="https://kit.fontawesome.com/4d4075f3ca.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font awesome  -->
+
     <style>
       body {
         background: #f8f7f7;
@@ -55,7 +68,6 @@
         font-weight: 400;
         font-style: normal;
       }
-      /* font style  */
       .primaryFont {
         font-family: "Forum", serif;
         font-weight: 400;
@@ -63,6 +75,11 @@
       }
       .secondaryFont {
         font-family: "PT Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .textFont {
+        font-family: "Poppins", sans-serif;
         font-weight: 400;
         font-style: normal;
       }
@@ -119,18 +136,55 @@
       .checkboxstyle:hover {
         border: 1px solid black;
       }
-
-      /* font style  */
+      #check:checked ~ nav {
+        left: 0;
+      }
+      label #openbtn,
+      label #cencelbtn {
+        font-size: 22px;
+        margin-right: 20px;
+        cursor: pointer;
+      }
+      label #openbtn {
+        display: block;
+      }
+      label #cencelbtn {
+        display: none;
+      }
+      #check:checked ~ label #openbtn {
+        display: none;
+      }
+      #check:checked ~ label #cencelbtn {
+        display: block;
+      }
+      .hoverStyle:hover {
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
     <!-- navbar start  -->
     <div class="bg-[#f8f7f7] text-center py-6 secondaryFont">
-      <nav>
-        <a class="ml-7 text-[14.3px]" href="">Luxury Picnics</a>
-        <a class="ml-7 text-[14.3px]" href="">Appointment request</a>
-        <a class="ml-7 text-[14.3px]" href="">Instagram</a>
-        <a class="ml-7 text-[14.3px]" href="">FAQ</a>
+      <input type="checkbox" name="check" id="check" hidden />
+      <label for="check" class="float-right lg:hidden">
+        <i id="openbtn" class="fa-solid fa-bars"></i>
+        <i id="cencelbtn" class="fa-solid fa-times"></i>
+      </label>
+      <nav
+        class="mr-10 bg-[#F5EFF0] lg:flex justify-center text-black uppercase rounded fixed lg:relative h-[100vh] lg:h-0 w-[100%] top-20 lg:top-0 left-[-100%] lg:left-0 transition-all duration-300 lg:transition-none text-center list-none"
+      >
+        <li class="lg:mb-0 mb-8 lg:mt-0 mt-10 hoverStyle">
+          <a class="ml-7 text-[14.3px]" href="">Luxury Picnics</a>
+        </li>
+        <li class="lg:mb-0 mb-8 hoverStyle">
+          <a class="ml-7 text-[14.3px]" href="">Appointment request</a>
+        </li>
+        <li class="lg:mb-0 mb-8 hoverStyle">
+          <a class="ml-7 text-[14.3px]" href="">Instagram</a>
+        </li>
+        <li class="lg:mb-0 mb-8 hoverStyle">
+          <a class="ml-7 text-[14.3px]" href="">FAQ</a>
+        </li>
       </nav>
     </div>
     <!-- navbar end  -->
@@ -500,6 +554,7 @@
             >
               <button
                 onclick="sendMail()"
+                id="mailSubmitBtn"
                 class="secondaryFont w-full bg-[#e8b4b8] py-3 hover:bg-[#de959a] duration-500"
                 style="border-radius: 8px"
               >
@@ -570,5 +625,22 @@
       </div>
     </div>
     <!-- Stay in the Loop section end -->
+
+    <!-- footer start  -->
+    <footer class="bg-[#323B43] py-16">
+      <div class="w-[120px] mx-auto cursor-pointer">
+        <a target="_blank" href="https://squareup.com/us/en/online-store">
+          <img
+            class="w-[30px] mx-auto mb-3"
+            src="images/whitesquare.png"
+            alt="whitesquare"
+          />
+          <p class="text-white text-[12px] textFont">
+            Powered by <span class="font-semibold">Square</span>
+          </p></a
+        >
+      </div>
+    </footer>
+    <!-- footer end  -->
   </body>
 </html>

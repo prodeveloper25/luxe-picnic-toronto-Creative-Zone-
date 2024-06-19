@@ -16,9 +16,6 @@ function sendMail() {
     .then(alert("Email Send Successfully"));
 }
 
-function checkInputCondition() {
-  // return startCondition;
-}
 // appointment email send setup end
 
 // dynamic year start
@@ -28,28 +25,14 @@ setInterval(() => {
 }, 1000);
 // dynamic year end
 
-// input condintion
-const name = document.getElementById("name").value;
-// const email = document.getElementById("email").value;
-// const phonenumber = document.getElementById("phonenumber").value;
-// const howmanypeople = document.getElementById("howmanypeople").value;
-// const picniclocation = document.getElementById("picniclocation").value;
-// const customlocation = document.getElementById("customlocation").value;
-// const dateinfo = document.getElementById("dateinfo").value;
-// const preferredtime = document.getElementById("preferredtime").value;
-// const picniccolortheme = document.getElementById("picniccolortheme").value;
-console.log("name", name);
-
-// const startCondition =
-//   name === "" &&
-//   email === "" &&
-//   phonenumber === "" &&
-//   howmanypeople === "" &&
-//   picniclocation === "" &&
-//   customlocation === "" &&
-//   dateinfo === "" &&
-//   preferredtime === "" &&
-//   picniccolortheme === ""
-//     ? document.getElementById("mailSubmitBtn").setAttribute("disabled", "true")
-//     : "";
-// input condintion
+// signup email send
+function signupSendMail() {
+  const signupEmailData = {
+    signupemail: document.getElementById("signupemail").value,
+  };
+  console.log(signupEmailData);
+  emailjs
+    .send("service_0tmogse", "template_ilqro4a", signupEmailData)
+    .then(alert("Sign up Successfully"));
+}
+// signup email send

@@ -578,24 +578,28 @@
           >
             Stay in the Loop
           </h2>
-          <div class="lg:w-[495px] md:w-[495px] flex items-center mb-4">
-            <input
-              type="email"
-              name="signupemail"
-              class="signupinput duration-300"
-              id="signupemail"
-              placeholder="Email"
-            />
-            <button
-              class="secondaryFont w-[110px] bg-[#e8b4b8] py-3 hover:bg-[#de959a] duration-500"
-              style="
-                border-top-right-radius: 8px;
-                border-bottom-right-radius: 8px;
-              "
-            >
-              Sign up
-            </button>
-          </div>
+          <form>
+            <div class="lg:w-[495px] md:w-[495px] flex items-center mb-4">
+              <input
+                type="email"
+                name="signupemail"
+                class="signupinput duration-300"
+                id="signupemail"
+                placeholder="Email"
+                required
+              />
+              <button
+                onclick="signupSendMail()"
+                class="secondaryFont w-[110px] bg-[#e8b4b8] py-3 hover:bg-[#de959a] duration-500"
+                style="
+                  border-top-right-radius: 8px;
+                  border-bottom-right-radius: 8px;
+                "
+              >
+                Sign up
+              </button>
+            </div>
+          </form>
           <p
             class="text-[#636363] text-[12px] lg:text-start md:text-start text-center"
           >

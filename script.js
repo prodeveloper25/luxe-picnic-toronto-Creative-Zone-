@@ -1,3 +1,4 @@
+// appointment email send setup start
 function sendMail() {
   const allappointmentdata = {
     name: document.getElementById("name").value,
@@ -14,3 +15,12 @@ function sendMail() {
     .send("service_def26fe", "template_x1bokze", allappointmentdata)
     .then(alert("Email Send Successfully"));
 }
+
+// appointment email send setup end
+
+// dynamic year start
+setInterval(() => {
+  document.getElementById("dynamicyear").innerHTML =
+    "© " + moment().format("YYYY");
+}, 0000);
+// dynamic year end

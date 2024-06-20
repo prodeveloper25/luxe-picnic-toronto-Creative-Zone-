@@ -13,7 +13,7 @@ function sendMail() {
   };
   emailjs
     .send("service_def26fe", "template_x1bokze", allappointmentdata)
-    .then(alert("Email Send Successfully"));
+    .then(alert("Appointment request send successfully"));
 }
 
 // appointment email send setup end
